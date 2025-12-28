@@ -1,0 +1,76 @@
+.clock-timer
+{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding : 20px;
+    max-width : 800px;
+    background-color: white;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius : 10px;
+    justify-content: center;
+    align-items: center;
+    magin: 0;
+}
+
+.title
+{
+    font-size : 50px;
+    margin-bottom : 10px;
+}
+
+.timer
+{
+    font-size : 80px;
+    
+}
+.button
+{
+    font-size : 20px;
+    padding : 20px 40px;
+    margin : 10px;
+    cursor : pointer;
+    color :white;
+    border : none;
+    border-radius : 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#startBtn
+{
+    background-color : #5ddf61;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    padding : 15px 30px;
+}
+#startBtn:hover{
+    opacity : 0.8;
+    transform: scale(1.1);
+}
+
+#stopBtn
+{
+    color: white;
+    background-color : #e43636;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    padding : 15px 30px;
+}
+#stopBtn:hover{
+    opacity : 0.8;
+    transform: scale(1.1);
+}
+
+#resetBtn
+{
+    color : white;
+    background-color : #2ba1ef;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    padding : 15px 30px;
+}
+#resetBtn:hover{
+    opacity : 0.8;
+    transform: scale(1.1);
+}
