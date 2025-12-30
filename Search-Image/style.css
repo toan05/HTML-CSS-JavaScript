@@ -1,0 +1,120 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    line-height: 1.6;
+}
+
+h1 
+{
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 20px;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-button:hover {
+    background-color: #2aec54;
+    transition: all 0.3s ease-in-out;
+    stransform: scale(1.1);
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 20px;
+
+}
+
+
+.search-results img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    .blur-angle {
+  filter: blur(8px);
+
+  /* Góc 45deg – đổi góc tùy ý */
+  mask-image: linear-gradient(
+    45deg,
+    transparent 0%,
+    black 40%,
+    black 100%
+  );
+    }
+}
+
+.search-results img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#show-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#show-more:hover {
+    background-color: #0056b3;
+    transition: all 0.3s ease-in-out;
+    stransform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .search-result {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-result {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  #search-input {
+    margin-bottom: 20px;
+    width: 85%;
+  }
+}
